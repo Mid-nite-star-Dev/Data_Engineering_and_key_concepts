@@ -140,7 +140,7 @@ and the need for real-time insights, the use of data lakes allows access to stru
 
 **Question5: Discuss the advantages and challenges of ETL in the context of data engineering.**
 			
-**Advantages of ETL**
+**Advantages Of ETL**
 ETL allows data engineers to apply consistent and standardized transformations to the data before loading it into the target, ensuring that the data is clean, accurate, and compatible. 
 ETL also enables data engineers to enforce data quality rules and validations at the source level, preventing errors and anomalies from propagating downstream. 
 ETL can also improve the performance and efficiency of the target system, as the data is already optimized and structured for querying and analysis.
