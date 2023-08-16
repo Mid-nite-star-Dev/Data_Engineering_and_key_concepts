@@ -122,22 +122,27 @@ A real-world case is a front office risk analytics applications used by traders,
 **Challenges of Hybrid Transaction Analytical Processing (HTAP) For OLTP and OLAP**
 
 •The main technical challenges for an HTAP database are how to be efficient both for operational (many small transactions with a high fraction of updates) and analytical workloads (large and complex queries traversing large number of rows) on the same database system and how to prevent the interference of the analytical queries over the operational workload. This kind of operational workload is also commonly referred to as Operational Analytical Processing.
+
 •Some challenges for HTAP include limited industry experience and skills, as well as undefined best practices.
 
 
 **Question4:  Explain the key differences between a traditional relational database, a data warehouse, and a data lake. When would you recommend using each of these storage solutions in a data engineering project?**
 
 A database is used to store, search and report on structured data from a single source. They are the simplest to create and SQL can be used to query and report on the data. There are both open source and proprietary databases, making it widely accessible to install and start using on premise or on the cloud.
+
 A relational database requires schemas and are not a fit for unstructured or semi-structured data. Because of this rigid schema, they are not suited to be the centralized place to store data from multiple sources where the raw data varies in format and structure. However, they are popular for data analysis and monolithic applications.
 
 A data warehouse is used to store large amounts of structured data from multiple sources in a centralized place. The process of creating a data warehouse requires some heavy lifting in the planning and design stage of examining data structures. Data warehouses are preferred by the business and operations decision makers of the company and a good system justifies its often-high costs in proprietary software and storage.
 
 A data lake stores structured, semi-structured and unstructured data, supporting the ability to store raw data from all sources without the need to process or transform it at that time.
 Only when the data needs to be retrieved, will some structure need to be applied, which is ideal in the hands of data scientists and data analysis developers who can create new data models on the fly but does not provide the same reporting capabilities and ease of use for business users. Storing data in data lakes is much cheaper than in a data warehouse. Data lakes are very popular in the modern stack because of its flexibility and costs but they are not a replacement for data warehouses or relational databases.
+
 A Data use case:
 Shipping Company: They sell gadgets online and outsource fulfillment to others. They use a basic database to track orders and often discard records not long after the orders have been delivered. Their products change frequently and so they feel they have no need for historical data.
+
 A Data warehouse use case:
-Banking and finance: A data warehouse is often the best storage model for these sectors, as they allow structured access by the entire company rather than a single data scientist. 
+Banking and finance: A data warehouse is often the best storage model for these sectors, as they allow structured access by the entire company rather than a single data scientist.
+
 A Data Lake use case:
 Healthcare: Data warehouses have been used for many years in the healthcare industry. Due to the large amounts of unstructured data in healthcare (i.e. physicians’ notes, clinical data, etc.)
 and the need for real-time insights, the use of data lakes allows access to structured and unstructured data, which turns out to be a better fit for healthcare companies.
@@ -148,18 +153,22 @@ and the need for real-time insights, the use of data lakes allows access to stru
 **Advantages Of ETL**
 
 ETL allows data engineers to apply consistent and standardized transformations to the data before loading it into the target, ensuring that the data is clean, accurate, and compatible. 
+
 ETL also enables data engineers to enforce data quality rules and validations at the source level, preventing errors and anomalies from propagating downstream. 
+
 ETL can also improve the performance and efficiency of the target system, as the data is already optimized and structured for querying and analysis.
+
 With data governance comes data democracy as well. That means making your corporate data accessible to all team members who need it to conduct the proper analysis necessary for driving insights and building business intelligence.
 It does so by creating a single point-of-view so that you can make sense of the data easily. It also lets you put new data sets next to the old ones to give you historical context.
 				
 **Challenges of ETL**
-ETL can be time-consuming and resource-intensive, as the data has to go through multiple stages and systems before reaching the target. 
-ETL can also limit the flexibility and agility of data engineering, as any changes or additions to the data sources or transformations require modifying and testing the ETL code or tools. 
-ETL can also reduce the availability and completeness of the data, as some data may be filtered out or discarded during the transformation process.
-You may end up with some data loss, corrupted or irrelevant data because some processes in the transformation phase may not have performed correctly. You may also end up dealing with many bottlenecks because of insufficient memory or CPU.
-In such cases, you may need to conduct a host of different data transformations. That defeats the whole purpose of ETL.
 
+ETL can be time-consuming and resource-intensive, as the data has to go through multiple stages and systems before reaching the target. 
+
+ETL can also limit the flexibility and agility of data engineering, as any changes or additions to the data sources or transformations require modifying and testing the ETL code or tools.
+
+ETL can also reduce the availability and completeness of the data, as some data may be filtered out or discarded during the transformation process. You may end up with some data loss, corrupted or irrelevant data because some processes in the transformation phase may not have performed correctly. You may also end up dealing with many bottlenecks because of insufficient memory or CPU.
+In such cases, you may need to conduct a host of different data transformations. That defeats the whole purpose of ETL.
 
 
 # Key Concepts in Data Engineering
@@ -174,6 +183,6 @@ In such cases, you may need to conduct a host of different data transformations.
 
 ## Contribution and Feedback
 
-   Contributions are welcomed to enhance and extend this Data Engineering and key concepts further. or provide feedback to help improve the Assignment Research.
+Contributions are welcomed to enhance and extend this Data Engineering and key concepts further. or provide feedback to help improve the Assignment Research.
 
 
