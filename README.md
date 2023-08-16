@@ -110,14 +110,19 @@ The most advanced mixed workload databases can process short transactions, long 
 A real-world case is a front office risk analytics applications used by traders, where the mixed workload implementation allows traders to analyse their risk exposure at any time across many dimensions (currency, counterparty…) and with various levels of aggregation (at portfolio level or at the most granular level of the trade id). Typically risk intelligence also needs to be propagated at various levels in the organization in real-time. A mixed workload system will allow both the desk manager and the head of trading to see aggregated risk data across all trading desks and all risk class assets with instant updates as market data change.
 
 **Benefits of Hybrid Transaction Analytical Processing (HTAP) For OLTP and OLAP**
-•	Unifying transactional and analytical data unlocks many new opportunities to extract value from data stores. Although running parallel OLTP and OLAP systems is still common practice for many organizations, the advantages of uniting these two systems has made HTAP an increasingly popular choice. 
-•	HTAP can minimize the need for creating ETL pipelines to copy data from OLTP to OLAP databases. Moving data can be costly and resource-intensive. Since transactional and analytical data is handled together within the HTAP system, ETL pipelines aren’t necessary to make this data available for analytics.
-•	With data available for analytical querying as soon as it’s created, an HTAP database allows organizations to capture value from transient opportunities that would be lost in the time needed to transfer data from an OLTP to OLAP database. 
-•	With only one system to manage, HTAP reduces operational complexity and costs. An HTAP database architecture streamlines data management, freeing IT and data professionals to focus on higher-level, value-added tasks.
+
+•Unifying transactional and analytical data unlocks many new opportunities to extract value from data stores. Although running parallel OLTP and OLAP systems is still common practice for many organizations, the advantages of uniting these two systems has made HTAP an increasingly popular choice. 
+
+•HTAP can minimize the need for creating ETL pipelines to copy data from OLTP to OLAP databases. Moving data can be costly and resource-intensive. Since transactional and analytical data is handled together within the HTAP system, ETL pipelines aren’t necessary to make this data available for analytics.
+
+•With data available for analytical querying as soon as it’s created, an HTAP database allows organizations to capture value from transient opportunities that would be lost in the time needed to transfer data from an OLTP to OLAP database. 
+
+•With only one system to manage, HTAP reduces operational complexity and costs. An HTAP database architecture streamlines data management, freeing IT and data professionals to focus on higher-level, value-added tasks.
 
 **Challenges of Hybrid Transaction Analytical Processing (HTAP) For OLTP and OLAP**
-•	The main technical challenges for an HTAP database are how to be efficient both for operational (many small transactions with a high fraction of updates) and analytical workloads (large and complex queries traversing large number of rows) on the same database system and how to prevent the interference of the analytical queries over the operational workload. This kind of operational workload is also commonly referred to as Operational Analytical Processing.
-•	Some challenges for HTAP include limited industry experience and skills, as well as undefined best practices.
+
+•The main technical challenges for an HTAP database are how to be efficient both for operational (many small transactions with a high fraction of updates) and analytical workloads (large and complex queries traversing large number of rows) on the same database system and how to prevent the interference of the analytical queries over the operational workload. This kind of operational workload is also commonly referred to as Operational Analytical Processing.
+•Some challenges for HTAP include limited industry experience and skills, as well as undefined best practices.
 
 
 **Question4:  Explain the key differences between a traditional relational database, a data warehouse, and a data lake. When would you recommend using each of these storage solutions in a data engineering project?**
@@ -141,6 +146,7 @@ and the need for real-time insights, the use of data lakes allows access to stru
 **Question5: Discuss the advantages and challenges of ETL in the context of data engineering.**
 			
 **Advantages Of ETL**
+
 ETL allows data engineers to apply consistent and standardized transformations to the data before loading it into the target, ensuring that the data is clean, accurate, and compatible. 
 ETL also enables data engineers to enforce data quality rules and validations at the source level, preventing errors and anomalies from propagating downstream. 
 ETL can also improve the performance and efficiency of the target system, as the data is already optimized and structured for querying and analysis.
